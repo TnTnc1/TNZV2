@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TNZ — Agence IA créative | Branding, Vidéo, Mini-jeux & Funnels</title>
+  <meta name="description" content="TNZ — Agence IA créative. Nous transformons votre image en machine à ventes : branding, vidéo, contenus, mini-jeux, funnels interactifs. Pacifique • International.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <meta property="og:title" content="TNZ — Agence IA créative" />
+  <meta property="og:description" content="Nous transformons votre image en machine à ventes. Branding, vidéo, mini-jeux & funnels interactifs." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://i.postimg.cc/QMDgPthx/hero-banniere.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Intro plein écran (optionnel) -->
+  <div id="intro" class="intro-overlay">
+    <video id="introVideo"
+      src="https://res.cloudinary.com/drjkiqihn/video/upload/f_auto:video,q_auto/v5/tnz_intro_video_jcuy1o.mp4"
+      autoplay muted playsinline preload="auto"
+      poster="https://i.postimg.cc/kXWkFF71/hero-tnz.webp"></video>
+    <button class="intro-skip" type="button" aria-label="Passer l'introduction">Passer</button>
+  </div>
+
+  <!-- Starfield -->
+  <canvas id="starfield" class="starfield"></canvas>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Retour en haut">
+        <span class="logo">TNZ</span>
+        <span class="brand-name">TNZ Communications</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" data-nav>
+        <a href="#solutions">Solutions</a>
+        <a href="#preuves">Preuves</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#packs">Packs</a>
+        <a href="audit.html" class="btn btn-neon">Audit gratuit</a>
+        <a class="btn btn-ghost" target="_blank" rel="noreferrer" href="https://wa.me/687930098">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO V2 -->
+    <section class="section hero hero-v2" aria-label="Introduction">
+      <div class="bg" style="background-image:url('https://i.postimg.cc/kXWkFF71/hero-tnz.webp')"></div>
+
+      <div class="hero-aurora" aria-hidden="true">
+        <span class="blob blob-a"></span>
+        <span class="blob blob-b"></span>
+        <span class="blob blob-c"></span>
+      </div>
+
+      <div class="container hero-inner reveal-on-load">
+        <div class="hero-topline">
+          <span class="badge">Nouméa • Pacifique • International</span>
+          <span class="badge badge-ghost">⚡ Résultats visibles en 14 jours</span>
+        </div>
+
+        <h1 class="headline-split">
+          TNZ transforme votre image en <span class="underline-glow">machine à ventes</span>.
+        </h1>
+
+        <p class="hero-lead">
+          Branding premium, vidéos & contenus IA, mini-jeux interactifs, tunnels de conversion.
+          On ne fait pas “du joli”. On crée des marques qu’on n’oublie pas.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn btn-neon btn-pulse" href="audit.html">🚀 Obtenir mon audit gratuit</a>
+          <a class="btn btn-ghost btn-glow" href="#preuves">📈 Voir des preuves</a>
+          <a class="btn btn-ghost" href="score-ia.html">🧠 Calculer mon Score IA</a>
+        </div>
+
+        <div class="micro-proof">
+          <div class="micro-pill">🎬 Vidéos & Ads</div>
+          <div class="micro-pill">🎮 Mini-jeux web</div>
+          <div class="micro-pill">🧩 Funnels & landing</div>
+          <div class="micro-pill">✨ Branding & design</div>
+        </div>
+
+        <div class="founder">
+          Fondateur & Gérant : <strong>Anthony Bolo</strong>
+        </div>
+      </div>
+
+      <button class="scroll-cue" data-scroll="#solutions" aria-label="Faire défiler">
+        <span></span>
+      </button>
+    </section>
+
+    <div class="bridge"></div>
+
+    <!-- BARRE DE CONFIANCE -->
+    <section class="section slim">
+      <div class="container trustbar">
+        <div class="trustbar-left">
+          <h2 class="trust-title reveal-on-scroll">Là où d’autres publient… nous convertissons.</h2>
+          <p class="subtitle reveal-on-scroll">
+            TNZ combine création + IA + stratégie pour transformer l’attention en clients.
+          </p>
+        </div>
+
+        <div class="trustbar-right reveal-on-scroll">
+          <div class="trust-metric">
+            <div class="trust-num">14</div>
+            <div class="trust-label">jours pour un boost</div>
+          </div>
+          <div class="trust-metric">
+            <div class="trust-num">3</div>
+            <div class="trust-label">piliers : image / contenu / conversion</div>
+          </div>
+          <div class="trust-metric">
+            <div class="trust-num">∞</div>
+            <div class="trust-label">itérations & tests</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTIONS V2 -->
+    <section id="solutions" class="section with-bg">
+      <div class="bg" style="background-image:url('https://i.postimg.cc/L5KxnwgH/expertises-tnz.webp')"></div>
+      <div class="container">
+        <h2 class="reveal-on-scroll">Nos solutions “transformation”</h2>
+        <p class="subtitle reveal-on-scroll">
+          On ne vend pas des outils. On vend ce que ça change pour votre business.
+        </p>
+
+        <div class="cards-grid cards-grid-v2">
+          <article class="card reveal-on-scroll">
+            <div class="card-kicker">01 • Autorité</div>
+            <h3>Branding premium & design</h3>
+            <p class="card-text">
+              Une identité qu’on reconnaît en 2 secondes. Un univers cohérent. Un style mémorable.
+            </p>
+            <ul class="card-list">
+              <li>Direction artistique & système visuel</li>
+              <li>Kit réseaux sociaux + templates</li>
+              <li>Landing pages conversion-first</li>
+            </ul>
+          </article>
+
+          <article class="card reveal-on-scroll">
+            <div class="card-kicker">02 • Attraction</div>
+            <h3>Vidéos, ads & contenus IA</h3>
+            <p class="card-text">
+              Des contenus qui arrêtent le scroll et donnent envie d’acheter.
+            </p>
+            <ul class="card-list">
+              <li>Clips, pubs, présentateurs virtuels</li>
+              <li>Multi-langues + lip-sync</li>
+              <li>Contenus packagés & déclinables</li>
+            </ul>
+          </article>
+
+          <article class="card reveal-on-scroll">
+            <div class="card-kicker">03 • Conversion</div>
+            <h3>Funnels & tunnels de vente</h3>
+            <p class="card-text">
+              On transforme votre trafic en demandes sérieuses (WhatsApp, formulaire, appel).
+            </p>
+            <ul class="card-list">
+              <li>Audit + score + devis</li>
+              <li>Lead magnet & automation</li>
+              <li>A/B tests & optimisation</li>
+            </ul>
+          </article>
+
+          <article class="card reveal-on-scroll">
+            <div class="card-kicker">04 • Viral</div>
+            <h3>Mini-jeux & expériences interactives</h3>
+            <p class="card-text">
+              Le marketing le plus puissant : quand vos clients jouent, ils partagent.
+            </p>
+            <ul class="card-list">
+              <li>Mini-jeux web / mobile</li>
+              <li>Gamification de campagne</li>
+              <li>Collecte leads intégrée</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="callout reveal-on-scroll">
+          <div>
+            <h3>Tu veux savoir ce qui te manque pour exploser ?</h3>
+            <p>Fais l’audit. On te donne un plan concret + un score + un devis estimatif.</p>
+          </div>
+          <div class="callout-actions">
+            <a class="btn btn-neon" href="audit.html">Obtenir mon audit</a>
+            <a class="btn btn-ghost" href="score-ia.html">Calculer mon score</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREUVES -->
+    <section id="preuves" class="section">
+      <div class="container">
+        <h2 class="reveal-on-scroll">Preuves (à rendre “impossible à ignorer”)</h2>
+        <p class="subtitle reveal-on-scroll">
+          Ici, tu mettras tes vrais chiffres et 2-3 témoignages. Je te laisse déjà la structure premium prête.
+        </p>
+
+        <div class="proof-grid">
+          <article class="proof-card reveal-on-scroll">
+            <div class="proof-head">
+              <div class="proof-badge">Avant / Après</div>
+              <div class="proof-tag">Branding + landing</div>
+            </div>
+            <h3>Un site qui convertit, pas juste un site qui brille</h3>
+            <p>
+              Refonte landing + CTA WhatsApp + structure de preuve → plus de demandes qualifiées.
+            </p>
+            <div class="proof-metrics">
+              <div><span>+X%</span><small>conversion</small></div>
+              <div><span>+X</span><small>demandes / semaine</small></div>
+              <div><span>-X%</span><small>coût par lead</small></div>
+            </div>
+            <p class="proof-note">Remplace X par tes vrais chiffres quand tu les as.</p>
+          </article>
+
+          <article class="proof-card reveal-on-scroll">
+            <div class="proof-head">
+              <div class="proof-badge">Ads</div>
+              <div class="proof-tag">Vidéo + déclinaisons</div>
+            </div>
+            <h3>Des vidéos publicitaires déclinables en 20 formats</h3>
+            <p>
+              Une master vidéo → 10 versions courtes + 5 stories + 5 formats feed, en cohérence.
+            </p>
+            <div class="proof-metrics">
+              <div><span>+X</span><small>vues</small></div>
+              <div><span>+X%</span><small>rétention</small></div>
+              <div><span>+X</span><small>formats livrés</small></div>
+            </div>
+            <p class="proof-note">Idéal pour les marques Pacifique (moins de budget, plus d’impact).</p>
+          </article>
+
+          <article class="proof-card reveal-on-scroll">
+            <div class="proof-head">
+              <div class="proof-badge">Viral</div>
+              <div class="proof-tag">Mini-jeu + lead capture</div>
+            </div>
+            <h3>Mini-jeu = engagement + leads</h3>
+            <p>
+              Les gens jouent, partagent, reviennent. Tu récupères email / WhatsApp pendant l’expérience.
+            </p>
+            <div class="proof-metrics">
+              <div><span>+X%</span><small>engagement</small></div>
+              <div><span>+X</span><small>leads</small></div>
+              <div><span>+X</span><small>partages</small></div>
+            </div>
+            <p class="proof-note">C’est le “hack” le plus sous-utilisé en NC.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RÉALISATIONS (ta galerie, version mieux hiérarchisée) -->
+    <section id="realisations" class="section">
+      <div class="container">
+        <h2 class="reveal-on-scroll">Réalisations (démonstrations)</h2>
+        <p class="subtitle reveal-on-scroll">Clique pour voir en grand avec le son.</p>
+
+        <div class="video-gallery">
+          <figure class="video-card reveal-on-scroll" data-video-src="https://res.cloudinary.com/drjkiqihn/video/upload/v1754908167/Luxury_Window_Cleaning_Ad_Creation_slj1g0.mp4">
+            <div class="video-thumb">
+              <video muted playsinline loop preload="metadata" src="https://res.cloudinary.com/drjkiqihn/video/upload/v1754908167/Luxury_Window_Cleaning_Ad_Creation_slj1g0.mp4#t=1"></video>
+              <div class="play-icon"></div>
+            </div>
+            <figcaption>Luxury Window Cleaning</figcaption>
+          </figure>
+
+          <figure class="video-card reveal-on-scroll" data-video-src="https://res.cloudinary.com/drjkiqihn/video/upload/v1754894318/atelier_de_lilive_s_odamhu.mp4">
+            <div class="video-thumb">
+              <video muted playsinline loop preload="metadata" src="https://res.cloudinary.com/drjkiqihn/video/upload/v1754894318/atelier_de_lilive_s_odamhu.mp4#t=1"></video>
+              <div class="play-icon"></div>
+            </div>
+            <figcaption>Atelier de Lily</figcaption>
+          </figure>
+
+          <figure class="video-card reveal-on-scroll" data-video-src="https://res.cloudinary.com/drjkiqihn/video/upload/v1754902134/Prompt_name_origine__202508111932_esl22_v5brs2.mp4">
+            <div class="video-thumb">
+              <video muted playsinline loop preload="metadata" src="https://res.cloudinary.com/drjkiqihn/video/upload/v1754902134/Prompt_name_origine__202508111932_esl22_v5brs2.mp4#t=1"></video>
+              <div class="play-icon"></div>
+            </div>
+            <figcaption>Origines</figcaption>
+          </figure>
+
+          <figure class="video-card reveal-on-scroll" data-video-src="https://res.cloudinary.com/drjkiqihn/video/upload/v1754908064/Vendeuse_Tahitienne_Pr%C3%A9sente_Nouvelle_Salade_x94pkg.mp4">
+            <div class="video-thumb">
+              <video muted playsinline loop preload="metadata" src="https://res.cloudinary.com/drjkiqihn/video/upload/v1754908064/Vendeuse_Tahitienne_Pr%C3%A9sente_Nouvelle_Salade_x94pkg.mp4#t=1"></video>
+              <div class="play-icon"></div>
+            </div>
+            <figcaption>Vendeuse tahitienne</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKS -->
+    <section id="packs" class="section with-bg">
+      <div class="bg" style="background-image:url('https://i.postimg.cc/fT0BxwfM/arsenal-tnz.webp')"></div>
+      <div class="container">
+        <h2 class="reveal-on-scroll">Packs TNZ (clairs, premium, scalables)</h2>
+        <p class="subtitle reveal-on-scroll">
+          Tu peux remplacer les prix plus tard. La structure est prête pour vendre.
+        </p>
+
+        <div class="pricing-grid">
+          <article class="price-card reveal-on-scroll">
+            <div class="price-top">
+              <h3>Starter</h3>
+              <div class="price">90 000 <small>CFP</small></div>
+              <p>Pour tester TNZ sur 1 action.</p>
+            </div>
+            <ul>
+              <li>1 landing conversion + CTA WhatsApp</li>
+              <li>1 vidéo courte (ads / story)</li>
+              <li>Kit visuel (3 templates)</li>
+            </ul>
+            <a class="btn btn-ghost" href="audit.html">Demander ce pack</a>
+          </article>
+
+          <article class="price-card featured reveal-on-scroll">
+            <div class="price-top">
+              <div class="pill-featured">Le + choisi</div>
+              <h3>Growth</h3>
+              <div class="price">180 000 <small>CFP</small></div>
+              <p>Pour générer des demandes sérieuses.</p>
+            </div>
+            <ul>
+              <li>Landing + funnel + lead magnet</li>
+              <li>3 vidéos (déclinées en formats)</li>
+              <li>Optimisation & conseils contenu</li>
+            </ul>
+            <a class="btn btn-neon" href="audit.html">Obtenir l’audit</a>
+          </article>
+
+          <article class="price-card reveal-on-scroll">
+            <div class="price-top">
+              <h3>Elite</h3>
+              <div class="price">390 000 <small>CFP</small></div>
+              <p>Pour devenir une marque “inratable”.</p>
+            </div>
+            <ul>
+              <li>Brand system complet</li>
+              <li>Campagne vidéo + ads</li>
+              <li>Mini-expérience interactive</li>
+            </ul>
+            <a class="btn btn-ghost" href="audit.html">Parler Elite</a>
+          </article>
+        </div>
+
+        <div class="cta-band reveal-on-scroll">
+          <div>
+            <h3>Tu veux qu’on te dise exactement quoi faire ?</h3>
+            <p>Audit gratuit → plan d’action + score + estimation.</p>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-neon" href="audit.html">🚀 Lancer mon audit</a>
+            <a class="btn btn-ghost" href="https://wa.me/687930098" target="_blank" rel="noreferrer">WhatsApp direct</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MINI-JEUX -->
+    <section class="section">
+      <div class="container reveal-on-scroll">
+        <h2>Mini-jeux (exemples jouables)</h2>
+        <p class="subtitle">Parfait pour l’engagement, la viralité et la collecte de leads.</p>
+        <div class="game-card">
+          <div class="game-thumb">
+            <img src="https://i.postimg.cc/G2tQQPLt/Gemini-Generated-Image-pb3r6epb3r6epb3r.png" alt="Pac-Man — aperçu du mini-jeu">
+          </div>
+          <div class="game-actions">
+            <a class="btn btn-neon" href="https://pacman-nc.netlify.app/" target="_blank" rel="noreferrer">👾 Jouer à Pac-Man</a>
+            <a class="btn btn-ghost" href="audit.html">Créer mon mini-jeu</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT (simple, + CTA audit) -->
+    <section class="section with-bg" id="contact">
+      <div class="bg" style="background-image:url('https://i.postimg.cc/sfm5vmHP/map-noumea.png')"></div>
+      <div class="container two-col">
+        <div class="reveal-on-scroll">
+          <h2>Parlons de votre projet</h2>
+          <p class="subtitle left">
+            Le plus simple : commence par l’audit. Tu auras une réponse structurée.
+          </p>
+
+          <ul class="contact-list">
+            <li><strong>Entité :</strong> Tinz Production</li>
+            <li><strong>Email :</strong> <a href="mailto:contact.tnznc@gmail.com">contact.tnznc@gmail.com</a></li>
+            <li><strong>Téléphone :</strong> <a href="tel:+687930098">+687 930 098</a></li>
+            <li><strong>Adresse :</strong> Rue Roger Gervolino, 98800 Nouméa</li>
+          </ul>
+
+          <div class="cta-row">
+            <a class="btn btn-neon" href="audit.html">🚀 Démarrer par l’audit</a>
+            <a class="btn btn-ghost" target="_blank" rel="noreferrer" href="https://wa.me/687930098">WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- Form Netlify (contact rapide) -->
+        <form name="contact-v2" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form reveal-on-scroll">
+          <input type="hidden" name="form-name" value="contact-v2" />
+          <p class="hidden"><label>Ne pas remplir: <input name="bot-field"></label></p>
+
+          <h3>Message rapide</h3>
+          <label>Nom / Société <input name="nom" placeholder="Votre nom"></label>
+          <label>Email <input name="email" type="email" placeholder="vous@exemple.nc"></label>
+          <label>Message <textarea name="message" rows="5" placeholder="Décrivez en 2 lignes…"></textarea></label>
+          <button class="btn btn-neon" type="submit">Envoyer</button>
+
+          <p class="tiny-note">⚡ Pour une réponse ultra structurée : passe par <a href="audit.html">l’audit</a>.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> TNZ — Tous droits réservés.</p>
+      <p>“Nous créons des marques que l’on n’oublie pas.”</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox vidéo -->
+  <div id="video-lightbox" class="video-lightbox" aria-hidden="true">
+    <div class="lightbox-content" role="dialog" aria-modal="true" aria-label="Lecture vidéo">
+      <video id="lightbox-video" src="" controls></video>
+    </div>
+    <button id="close-lightbox" class="close-lightbox" aria-label="Fermer">&times;</button>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
