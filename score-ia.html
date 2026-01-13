@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Score IA — TNZ</title>
+  <meta name="description" content="Calcule ton Score IA & Conversion en 2 minutes.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="page">
+  <canvas id="starfield" class="starfield"></canvas>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="logo">TNZ</span>
+        <span class="brand-name">TNZ Communications</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html#preuves">Preuves</a>
+        <a href="index.html#packs">Packs</a>
+        <a class="btn btn-neon" href="audit.html">Audit</a>
+        <a class="btn btn-ghost" target="_blank" rel="noreferrer" href="https://wa.me/687930098">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section hero hero-mini">
+      <div class="container hero-inner">
+        <span class="badge">Score IA</span>
+        <h1 class="headline-split">Ton Score IA & Conversion (2 minutes)</h1>
+        <p class="hero-lead">
+          Réponds vite. On te donne une note /100 + les 3 actions à faire en premier.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container score-shell">
+        <div class="score-card reveal-on-scroll">
+          <h2>Questions</h2>
+
+          <div class="score-q">
+            <label>1) Ton identité est-elle cohérente partout ?</label>
+            <div class="score-choices">
+              <button type="button" class="chip" data-score="6">Oui</button>
+              <button type="button" class="chip" data-score="3">Moyen</button>
+              <button type="button" class="chip" data-score="0">Non</button>
+            </div>
+          </div>
+
+          <div class="score-q">
+            <label>2) As-tu une landing qui convertit (CTA clair) ?</label>
+            <div class="score-choices">
+              <button type="button" class="chip" data-score="8">Oui</button>
+              <button type="button" class="chip" data-score="4">Pas vraiment</button>
+              <button type="button" class="chip" data-score="0">Non</button>
+            </div>
+          </div>
+
+          <div class="score-q">
+            <label>3) Tes contenus sont-ils déclinés en formats ads/stories ?</label>
+            <div class="score-choices">
+              <button type="button" class="chip" data-score="8">Oui</button>
+              <button type="button" class="chip" data-score="4">Un peu</button>
+              <button type="button" class="chip" data-score="0">Non</button>
+            </div>
+          </div>
+
+          <div class="score-q">
+            <label>4) Tu récupères des leads (email/WhatsApp) automatiquement ?</label>
+            <div class="score-choices">
+              <button type="button" class="chip" data-score="10">Oui</button>
+              <button type="button" class="chip" data-score="5">Parfois</button>
+              <button type="button" class="chip" data-score="0">Non</button>
+            </div>
+          </div>
+
+          <div class="score-q">
+            <label>5) Tu fais des tests (A/B, offres, hooks) ?</label>
+            <div class="score-choices">
+              <button type="button" class="chip" data-score="8">Oui</button>
+              <button type="button" class="chip" data-score="3">Rarement</button>
+              <button type="button" class="chip" data-score="0">Non</button>
+            </div>
+          </div>
+
+          <div class="score-q">
+            <label>6) Ton offre est-elle claire (packs/prix/étapes) ?</label>
+            <div class="score-choices">
+              <button type="button" class="chip" data-score="10">Oui</button>
+              <button type="button" class="chip" data-score="5">Pas assez</button>
+              <button type="button" class="chip" data-score="0">Non</button>
+            </div>
+          </div>
+
+          <div class="score-actions">
+            <button class="btn btn-neon" id="calcScore" type="button">Calculer mon score</button>
+            <a class="btn btn-ghost" href="audit.html">Faire l’audit complet</a>
+          </div>
+
+          <div id="scoreResult" class="score-result hidden" aria-live="polite"></div>
+        </div>
+
+        <!-- Capture lead Netlify -->
+        <form name="score-ia-lead" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/merci.html" class="form reveal-on-scroll">
+          <input type="hidden" name="form-name" value="score-ia-lead" />
+          <p class="hidden"><label>Ne pas remplir: <input name="bot-field"></label></p>
+
+          <h3>Recevoir ton plan par email</h3>
+          <label>Email
+            <input name="email" type="email" placeholder="vous@exemple.nc" required>
+          </label>
+          <label>Nom / Société
+            <input name="societe" placeholder="Optionnel">
+          </label>
+          <input type="hidden" name="score_calcule" id="scoreHidden" value="">
+
+          <button class="btn btn-neon" type="submit">Envoyer</button>
+          <p class="tiny-note">Tu peux aussi aller direct sur WhatsApp si c’est urgent.</p>
+
+          <a class="btn btn-ghost" target="_blank" rel="noreferrer" href="https://wa.me/687930098">WhatsApp</a>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> TNZ — Tous droits réservés.</p>
+      <p>Score → Plan → Action.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
