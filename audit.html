@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Audit gratuit — TNZ</title>
+  <meta name="description" content="Audit TNZ gratuit : score, plan d'action et estimation.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="page">
+  <canvas id="starfield" class="starfield"></canvas>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="logo">TNZ</span>
+        <span class="brand-name">TNZ Communications</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html#solutions">Solutions</a>
+        <a href="index.html#realisations">Réalisations</a>
+        <a class="btn btn-ghost" href="score-ia.html">Score IA</a>
+        <a class="btn btn-neon" target="_blank" rel="noreferrer" href="https://wa.me/687930098">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section hero hero-mini">
+      <div class="container hero-inner">
+        <span class="badge">Audit gratuit</span>
+        <h1 class="headline-split">On te dit exactement quoi faire pour convertir plus.</h1>
+        <p class="hero-lead">
+          Tu réponds à 8 questions. On te renvoie : <strong>un score</strong>, <strong>un plan d’action</strong>, et une <strong>estimation</strong>.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container form-shell">
+        <div class="form-aside reveal-on-scroll">
+          <h2>Ce que tu reçois</h2>
+          <div class="benefits">
+            <div class="benefit">
+              <div class="benefit-ico">🧠</div>
+              <div>
+                <strong>Score IA & Conversion</strong>
+                <p>Une note claire + les 3 leviers prioritaires.</p>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="benefit-ico">📌</div>
+              <div>
+                <strong>Plan d’action 14 jours</strong>
+                <p>Étapes concrètes, contenus, structure, CTA.</p>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="benefit-ico">💬</div>
+              <div>
+                <strong>Option WhatsApp direct</strong>
+                <p>Si c’est urgent, tu peux nous ping en 1 clic.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mini-cta">
+            <a class="btn btn-ghost" href="index.html">← Retour au site</a>
+            <a class="btn btn-neon" target="_blank" rel="noreferrer" href="https://wa.me/687930098">WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- NETLIFY FORM -->
+        <form name="audit-tnz" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/merci.html" class="form reveal-on-scroll">
+          <input type="hidden" name="form-name" value="audit-tnz" />
+          <p class="hidden"><label>Ne pas remplir: <input name="bot-field"></label></p>
+
+          <h3>Formulaire audit</h3>
+
+          <div class="form-grid">
+            <label>Nom / Société
+              <input name="societe" placeholder="Ex: GBNC / Boutique / Restaurant…" required>
+            </label>
+
+            <label>Votre prénom
+              <input name="prenom" placeholder="Ex: José" required>
+            </label>
+
+            <label>Email
+              <input name="email" type="email" placeholder="vous@exemple.nc" required>
+            </label>
+
+            <label>Téléphone / WhatsApp
+              <input name="telephone" placeholder="+687 …">
+            </label>
+
+            <label>Secteur
+              <select name="secteur" required>
+                <option value="" selected disabled>Choisir…</option>
+                <option>Restauration</option>
+                <option>Commerce</option>
+                <option>Services</option>
+                <option>Tourisme</option>
+                <option>Immobilier</option>
+                <option>Industrie</option>
+                <option>Autre</option>
+              </select>
+            </label>
+
+            <label>Objectif principal
+              <select name="objectif" required>
+                <option value="" selected disabled>Choisir…</option>
+                <option>Plus de demandes / devis</option>
+                <option>Plus de ventes</option>
+                <option>Image premium</option>
+                <option>Plus d’abonnés / visibilité</option>
+                <option>Campagne (lancement)</option>
+              </select>
+            </label>
+
+            <label>Où se trouvent vos clients aujourd’hui ?
+              <select name="canal" required>
+                <option value="" selected disabled>Choisir…</option>
+                <option>Facebook</option>
+                <option>Instagram</option>
+                <option>TikTok</option>
+                <option>Google / SEO</option>
+                <option>WhatsApp uniquement</option>
+                <option>Bouche-à-oreille</option>
+              </select>
+            </label>
+
+            <label>Budget mensuel (approx.)
+              <select name="budget" required>
+                <option value="" selected disabled>Choisir…</option>
+                <option>&lt; 80 000 CFP</option>
+                <option>80 000 – 180 000 CFP</option>
+                <option>180 000 – 400 000 CFP</option>
+                <option>400 000+ CFP</option>
+              </select>
+            </label>
+
+            <label>Urgence
+              <select name="urgence" required>
+                <option value="" selected disabled>Choisir…</option>
+                <option>Cette semaine</option>
+                <option>Ce mois-ci</option>
+                <option>Dans 1–3 mois</option>
+              </select>
+            </label>
+
+            <label>Votre lien (site / insta / fb)
+              <input name="lien" placeholder="https://…">
+            </label>
+          </div>
+
+          <label>Décris ton problème en 2–3 phrases
+            <textarea name="message" rows="6" placeholder="Ex: on a du trafic mais peu de demandes…"></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn btn-neon" type="submit">Envoyer l’audit</button>
+            <a class="btn btn-ghost" target="_blank" rel="noreferrer" href="https://wa.me/687930098">WhatsApp direct</a>
+          </div>
+
+          <p class="tiny-note">
+            En envoyant ce formulaire, tu acceptes d’être recontacté pour l’audit. Pas de spam.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> TNZ — Tous droits réservés.</p>
+      <p>Audit → Score → Plan → Résultats.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
